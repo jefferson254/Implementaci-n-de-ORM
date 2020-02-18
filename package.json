@@ -1,0 +1,37 @@
+{
+  "name": "danny",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint .",
+    "start": "nodemon app.js"
+  },
+  "author": "Jefferson",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "init": "^0.1.2",
+    "mongodb": "^3.5.2",
+    "mongoose": "^5.8.10",
+    "nodemon": "^2.0.2",
+    "sequelize": "^5.21.4"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0"
+  },
+  "nodemonConfig": {
+    "restortable": "rs",
+    "ingnore": [
+      "node_modules/*/node_modules"
+    ],
+    "delay": "2500",
+    "env": {
+      "NODE_ENT": "develoment",
+      "PORT": 4000
+    }
+  }
+}
